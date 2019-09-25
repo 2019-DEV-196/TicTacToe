@@ -1,6 +1,6 @@
 # TicTacToe
 
-This is an implementation of the game Tic Tac Toe. It is written in Objective-C and used the MVC.
+This is an implementation of the game Tic Tac Toe. It is written in Objective-C and uses the MVC Architecture.
 
 ![](https://user-images.githubusercontent.com/55791451/65599067-3eeba180-df9d-11e9-80eb-dacef79aea8b.gif)
 
@@ -53,7 +53,7 @@ typedef NS_ENUM(short, Position) {
 
 ## Symbol
 
-This enum represents the content of a cell (empty, X or O).
+This enum represents the content of a cell (`Empty`, `X` or `O).
 
 ```
 typedef NS_ENUM(short, Symbol) {
@@ -85,7 +85,7 @@ Internally the grid is represented as a unidimensional array of `Symbol` values.
 Symbol _matrix[9];
 ```
 
-However this low level detail is considered "private" and not exposed to other classes.
+However this low level detail is not exposed to other classes.
 External objects can interact with Matrix using the following high level methods:
 
 ```
@@ -169,4 +169,6 @@ static NSInteger const ERROR_CODE_SYMBOL_X_EXPECTED = 2;
 static NSInteger const ERROR_CODE_SYMBOL_O_EXPECTED = 3;
 static NSInteger const ERROR_CODE_GAME_NOT_IN_PROGRESS = 4;
 ```
+
+
 
