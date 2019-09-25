@@ -31,7 +31,7 @@ The project contains the following Unit Tests:
 
 ## Position
 
-This enum contains one case for each cell of the 3x3 grid.
+This enum represents the position of a cell in the 3x3 grid.
 
 ```
 typedef NS_ENUM(short, Position) {
@@ -78,7 +78,7 @@ typedef NS_ENUM(short, GameState) {
 
 ## Matrix
 
-This class provides an abstraction of the TicTacToe 3x3 grid.
+This class provides an abstraction of the 3x3 grid.
 Internally the grid is represented as a unidimensional array of `Symbol` values.
 
 ```
