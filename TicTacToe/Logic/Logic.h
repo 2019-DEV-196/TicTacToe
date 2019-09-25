@@ -8,7 +8,7 @@
 
 @import Foundation;
 
-#import "GameStatus.h"
+#import "GameState.h"
 #import "Position.h"
 #import "Symbol.h"
 
@@ -18,7 +18,7 @@
 - (BOOL)addSymbol:(Symbol) symbol
        toPosition:(Position) position
         withError:(NSError **) error;
-- (GameStatus)gameStatus;
+- (GameState)gameState;
 - (Symbol)symbolByPosition:(Position) position;
 - (Symbol)currentTurn;
 

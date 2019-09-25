@@ -67,18 +67,18 @@
         }
     }
 
-    GameStatus gameStatus = [_logic gameStatus];
+    GameState gameStatus = [_logic gameState];
     switch (gameStatus) {
-        case GameStatusDraw:
+        case GameStateDraw:
             [self showAlertWithTitle:@"Draw" message:nil completionHandler:nil];
             break;
-        case GameStatusXWon:
+        case GameStateXWon:
             [self showAlertWithTitle:@"X WON!" message:nil completionHandler:nil];
             break;
-        case GameStatusOWon:
+        case GameStateOWon:
             [self showAlertWithTitle:@"O WON!" message:nil completionHandler:nil];
             break;
-        case GameStatusInProgress:
+        case GameStateInProgress:
             break;
     }
 }

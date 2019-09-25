@@ -14,7 +14,7 @@
 		F43CC677233A4A5700AD04DA /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = F43CC676233A4A5700AD04DA /* Assets.xcassets */; };
 		F43CC67A233A4A5700AD04DA /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = F43CC678233A4A5700AD04DA /* LaunchScreen.storyboard */; };
 		F43CC67D233A4A5700AD04DA /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = F43CC67C233A4A5700AD04DA /* main.m */; };
-		F43CC68A233A50A400AD04DA /* GameStatus.h in Sources */ = {isa = PBXBuildFile; fileRef = F43CC689233A50A400AD04DA /* GameStatus.h */; };
+		F43CC68A233A50A400AD04DA /* GameState.h in Sources */ = {isa = PBXBuildFile; fileRef = F43CC689233A50A400AD04DA /* GameState.h */; };
 		F43CC68C233A516800AD04DA /* Symbol.h in Sources */ = {isa = PBXBuildFile; fileRef = F43CC68B233A516800AD04DA /* Symbol.h */; };
 		F43CC692233A51B800AD04DA /* Logic.m in Sources */ = {isa = PBXBuildFile; fileRef = F43CC691233A51B800AD04DA /* Logic.m */; };
 		F43CC69A233A6AAE00AD04DA /* Matrix.m in Sources */ = {isa = PBXBuildFile; fileRef = F43CC699233A6AAE00AD04DA /* Matrix.m */; };
@@ -45,7 +45,7 @@
 		F43CC679233A4A5700AD04DA /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		F43CC67B233A4A5700AD04DA /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		F43CC67C233A4A5700AD04DA /* main.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = main.m; sourceTree = "<group>"; };
-		F43CC689233A50A400AD04DA /* GameStatus.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = GameStatus.h; sourceTree = "<group>"; };
+		F43CC689233A50A400AD04DA /* GameState.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = GameState.h; sourceTree = "<group>"; };
 		F43CC68B233A516800AD04DA /* Symbol.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = Symbol.h; sourceTree = "<group>"; };
 		F43CC690233A51B800AD04DA /* Logic.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = Logic.h; sourceTree = "<group>"; };
 		F43CC691233A51B800AD04DA /* Logic.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = Logic.m; sourceTree = "<group>"; };
@@ -122,7 +122,7 @@
 		F43CC683233A4BB900AD04DA /* Model */ = {
 			isa = PBXGroup;
 			children = (
-				F43CC689233A50A400AD04DA /* GameStatus.h */,
+				F43CC689233A50A400AD04DA /* GameState.h */,
 				F43CC68B233A516800AD04DA /* Symbol.h */,
 				F43CC693233A52E100AD04DA /* Position.h */,
 				F43CC698233A6AAE00AD04DA /* Matrix.h */,
@@ -254,7 +254,7 @@
 				F4BCB4CF233B73C600840E91 /* UIViewController+AlertMessage.m in Sources */,
 				F43CC672233A4A5600AD04DA /* ViewController.m in Sources */,
 				F43CC66C233A4A5600AD04DA /* AppDelegate.m in Sources */,
-				F43CC68A233A50A400AD04DA /* GameStatus.h in Sources */,
+				F43CC68A233A50A400AD04DA /* GameState.h in Sources */,
 				F43CC67D233A4A5700AD04DA /* main.m in Sources */,
 				F43CC68C233A516800AD04DA /* Symbol.h in Sources */,
 				F43CC66F233A4A5600AD04DA /* SceneDelegate.m in Sources */,

@@ -15,20 +15,20 @@
 @implementation Logic {
     Matrix * _matrix;
     UInt8 _numMoves;
-    GameStatus _gameStatus;
+    GameState _gameState;
 }
 
 - (instancetype)init {
     if ((self = [super init])) {
         _matrix = [Matrix new];
-        _gameStatus = GameStatusInProgress;
+        _gameState = GameStateInProgress;
     }
     return self;
 }
 
 - (void)resetGame {
     [_matrix reset];
-    _gameStatus = GameStatusInProgress;
+    _gameState = GameStateInProgress;
     _numMoves = 0;
 }
 
@@ -39,7 +39,7 @@
     bool isEvenTurn = _numMoves % 2 == 0;
     bool currentSymbolIsO = symbol == SymbolO;
 
-    if (_gameStatus != GameStatusInProgress) {
+    if (_gameState != GameStateInProgress) {
         *error = [[NSError alloc] initWithDomain:ERROR_DOMAIN_LOGIC
                                             code:ERROR_CODE_GAME_NOT_IN_PROGRESS
                                         userInfo:nil];
@@ -78,22 +78,22 @@
     switch (winner) {
         case SymbolEmpty:
             if (_numMoves == NUM_CELLS - 1) {
-                _gameStatus = GameStatusDraw;
+                _gameState = GameStateDraw;
             } else {
-                _gameStatus = GameStatusInProgress;
+                _gameState = GameStateInProgress;
             }
             break;
         case SymbolX:
-            _gameStatus = GameStatusXWon;
+            _gameState = GameStateXWon;
             break;
         case SymbolO:
-            _gameStatus = GameStatusOWon;
+            _gameState = GameStateOWon;
             break;
     }
 }
 
-- (GameStatus)gameStatus {
-    return _gameStatus;
+- (GameState)gameState {
+    return _gameState;
 }
 
 - (Symbol)symbolByPosition:(Position) position {
