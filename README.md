@@ -170,5 +170,3 @@ static NSInteger const ERROR_CODE_SYMBOL_O_EXPECTED = 3;
 static NSInteger const ERROR_CODE_GAME_NOT_IN_PROGRESS = 4;
 ```
 
-
-
