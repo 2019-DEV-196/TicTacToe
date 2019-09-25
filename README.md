@@ -64,15 +64,15 @@ typedef NS_ENUM(short, Symbol) {
 ```
 
 
-## GameStatus
+## GameState
 This enum represents the possible state of the game.
 
 ```
-typedef NS_ENUM(short, GameStatus) {
-    GameStatusInProgress = 0,
-    GameStatusXWon = 1,
-    GameStatusOWon = 2,
-    GameStatusDraw = 3
+typedef NS_ENUM(short, GameState) {
+    GameStateInProgress = 0,
+    GameStateXWon = 1,
+    GameStateOWon = 2,
+    GameStateDraw = 3
 };
 ```
 
