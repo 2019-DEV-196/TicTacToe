@@ -99,22 +99,20 @@
 		F43CC669233A4A5600AD04DA /* TicTacToe */ = {
 			isa = PBXGroup;
 			children = (
-				F43CC696233A54FF00AD04DA /* Constants.h */,
+				F450155A233B929D00701268 /* Categories */,
 				F43CC684233A4BC500AD04DA /* Logic */,
 				F43CC683233A4BB900AD04DA /* Model */,
+				F4501559233B929100701268 /* ViewController */,
+				F43CC696233A54FF00AD04DA /* Constants.h */,
 				F43CC66A233A4A5600AD04DA /* AppDelegate.h */,
 				F43CC66B233A4A5600AD04DA /* AppDelegate.m */,
 				F43CC66D233A4A5600AD04DA /* SceneDelegate.h */,
 				F43CC66E233A4A5600AD04DA /* SceneDelegate.m */,
-				F43CC670233A4A5600AD04DA /* ViewController.h */,
-				F43CC671233A4A5600AD04DA /* ViewController.m */,
 				F43CC673233A4A5600AD04DA /* Main.storyboard */,
 				F43CC676233A4A5700AD04DA /* Assets.xcassets */,
 				F43CC678233A4A5700AD04DA /* LaunchScreen.storyboard */,
 				F43CC67B233A4A5700AD04DA /* Info.plist */,
 				F43CC67C233A4A5700AD04DA /* main.m */,
-				F4BCB4CD233B73C600840E91 /* UIViewController+AlertMessage.h */,
-				F4BCB4CE233B73C600840E91 /* UIViewController+AlertMessage.m */,
 			);
 			path = TicTacToe;
 			sourceTree = "<group>";
@@ -147,6 +145,24 @@
 				F43CC6A3233A799600AD04DA /* Info.plist */,
 			);
 			path = TicTacToeTests;
+			sourceTree = "<group>";
+		};
+		F4501559233B929100701268 /* ViewController */ = {
+			isa = PBXGroup;
+			children = (
+				F43CC670233A4A5600AD04DA /* ViewController.h */,
+				F43CC671233A4A5600AD04DA /* ViewController.m */,
+			);
+			path = ViewController;
+			sourceTree = "<group>";
+		};
+		F450155A233B929D00701268 /* Categories */ = {
+			isa = PBXGroup;
+			children = (
+				F4BCB4CD233B73C600840E91 /* UIViewController+AlertMessage.h */,
+				F4BCB4CE233B73C600840E91 /* UIViewController+AlertMessage.m */,
+			);
+			path = Categories;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
