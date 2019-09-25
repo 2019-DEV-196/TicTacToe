@@ -2,6 +2,9 @@
 
 This is an implementation of the game Tic Tac Toe. It is written in Objective-C and used the MVC.
 
+![](https://user-images.githubusercontent.com/55791451/65599067-3eeba180-df9d-11e9-80eb-dacef79aea8b.gif)
+
+
 ## How to run the project
 
 Steps:
